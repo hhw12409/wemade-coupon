@@ -2,6 +2,7 @@ package com.wemade.coupon.dto.response;
 
 import com.wemade.coupon.entity.CouponTopic;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class GenerateCouponResponseDto {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,5 +31,6 @@ public class GenerateCouponResponseDto {
   private String userId;
 
   private LocalDateTime createdAt;
+
   private LocalDateTime updatedAt;
 }

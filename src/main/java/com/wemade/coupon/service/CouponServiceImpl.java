@@ -4,11 +4,12 @@ import com.wemade.coupon.dto.request.GenerateCouponRequestDto;
 import com.wemade.coupon.dto.response.GenerateCouponResponseDto;
 import com.wemade.coupon.entity.Coupon;
 import com.wemade.coupon.entity.CouponTopic;
+import com.wemade.coupon.exception.BadRequestException;
+import com.wemade.coupon.exception.ExceptionCode;
 import com.wemade.coupon.repository.CouponRepository;
 import com.wemade.coupon.repository.CouponTopicRepository;
 import com.wemade.coupon.utils.RandomUtil;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -25,10 +26,7 @@ public class CouponServiceImpl implements CouponService {
   @Transactional
   @Override
   public ResponseEntity<List<GenerateCouponResponseDto>> generateCoupons(GenerateCouponRequestDto request) {
-
-    if (request.getCount() <= 0) {
-      throw new IllegalArgumentException("Count should be greater than 0.");
-    }
+    validationCount(request);
 
     CouponTopic couponTopic = couponTopicRepository.findByName(request.getTopic())
             .orElseGet(() -> couponTopicRepository.save(new CouponTopic(request.getTopic())));
@@ -39,6 +37,8 @@ public class CouponServiceImpl implements CouponService {
     }
     return new ResponseEntity<>(couponRepository.findByTopic(couponTopic), HttpStatus.OK);
   }
+
+
 
   @Transactional
   @Override
@@ -66,5 +66,10 @@ public class CouponServiceImpl implements CouponService {
       // couponRepository.save(coupon);
     }
     return ResponseEntity.ok().build();
+  }
+
+  // Helper method
+  private static void validationCount(GenerateCouponRequestDto request) {
+    if (request.getCount() <= 0) throw new BadRequestException(ExceptionCode.INVALID_REQUEST);
   }
 }

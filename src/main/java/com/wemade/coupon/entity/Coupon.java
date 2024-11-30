@@ -33,8 +33,8 @@ public class Coupon {
   private LocalDateTime updatedAt;
 
   public Coupon(String code, CouponTopic topic, String userId) {
-    this.code = this.code;
-    this.topic = this.topic;
-    this.userId = this.userId;
+    this.code = code;
+    this.topic = topic;
+    this.userId = userId;
   }
 }

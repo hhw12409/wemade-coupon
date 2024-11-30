@@ -9,3 +9,9 @@ spring:
     url: jdbc:mysql://localhost:3307/coupon?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: root
+
+
+  logging:
+    file:
+      path: ./logs
+    config: classpath:logback-spring.xml

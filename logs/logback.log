@@ -1,0 +1,554 @@
+[2024-12-01 01:49:47:2396] DEBUG 21708 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 01:49:47:2600] DEBUG 21708 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 01:49:47:2621] DEBUG 21708 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 01:49:47:2650] DEBUG 21708 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 01:50:30:45498] INFO  21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 01:50:30:45498] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 01:50:30:45499] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 01:50:30:45499] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 01:50:30:45500] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@42516ce2
+[2024-12-01 01:50:30:45500] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@dcf64d2
+[2024-12-01 01:50:30:45500] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 01:50:30:45501] INFO  21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 01:50:30:45505] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/generate", parameters={}
+[2024-12-01 01:50:30:45510] DEBUG 21708 --- [nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-12-01 01:50:30:45516] DEBUG 21708 --- [nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-01 01:50:30:45520] DEBUG 21708 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource generate.]
+[2024-12-01 01:50:30:45520] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-01 01:50:30:45524] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:50:30:45525] DEBUG 21708 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:50:30:45541] DEBUG 21708 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:50:30:45542] DEBUG 21708 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:50:30 KST 2024, status=404, error=Not Found, path=/generate}]
+[2024-12-01 01:50:30:45560] DEBUG 21708 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-01 01:50:42:57104] DEBUG 21708 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/coupon/generate", parameters={}
+[2024-12-01 01:50:42:57105] DEBUG 21708 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(String, int)
+[2024-12-01 01:50:42:57111] DEBUG 21708 --- [nio-8080-exec-3] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.util.List<com.wemade.coupon.entity.Coupon> com.wemade.coupon.controller.CouponController.generateCoupon(java.lang.String,int): Required request parameter 'topic' for method parameter type String is not present
+[2024-12-01 01:50:42:57112] WARN  21708 --- [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'topic' for method parameter type String is not present]
+[2024-12-01 01:50:42:57112] DEBUG 21708 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+[2024-12-01 01:50:42:57113] DEBUG 21708 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:50:42:57113] DEBUG 21708 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:50:42:57114] DEBUG 21708 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:50:42:57115] DEBUG 21708 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:50:42 KST 2024, status=400, error=Bad Request, path=/coupon/generate}]
+[2024-12-01 01:50:42:57117] DEBUG 21708 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+[2024-12-01 01:51:02:77429] DEBUG 21708 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/coupon/generate?topic=%EC%9D%B4%EB%B2%A4%ED%8A%B8&count=2", parameters={masked}
+[2024-12-01 01:51:02:77430] DEBUG 21708 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(String, int)
+[2024-12-01 01:51:02:77607] DEBUG 21708 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:51:02:77607] DEBUG 21708 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Coupon(id=1, code=c5peNdL4f8PRNSNj, topic=CouponTopic(id=3, name=이벤트, createdAt=2024-11-30T03:02:14 (truncated)...]
+[2024-12-01 01:51:02:77614] DEBUG 21708 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:55:59:2239] DEBUG 24669 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 01:55:59:2439] DEBUG 24669 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 01:55:59:2460] DEBUG 24669 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 01:55:59:2489] DEBUG 24669 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 01:56:15:2326] DEBUG 24762 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 01:56:15:2534] DEBUG 24762 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 01:56:15:2555] DEBUG 24762 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 01:56:15:2584] DEBUG 24762 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 01:56:16:3535] INFO  24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 01:56:16:3535] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 01:56:16:3535] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 01:56:16:3535] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 01:56:16:3536] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@41c05747
+[2024-12-01 01:56:16:3536] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5702232d
+[2024-12-01 01:56:16:3536] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 01:56:16:3536] INFO  24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[2024-12-01 01:56:16:3542] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 01:56:16:3546] DEBUG 24762 --- [nio-8080-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:16:3561] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:16:3565] DEBUG 24762 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+[2024-12-01 01:56:16:3565] DEBUG 24762 --- [nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:16:3566] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+[2024-12-01 01:56:16:3566] DEBUG 24762 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+[2024-12-01 01:56:16:3566] DEBUG 24762 --- [nio-8080-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:16:3566] DEBUG 24762 --- [nio-8080-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:16:3567] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:56:16:3567] DEBUG 24762 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:56:16:3573] DEBUG 24762 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:16:3586] DEBUG 24762 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 01:56:16:3586] DEBUG 24762 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+[2024-12-01 01:56:16:3586] DEBUG 24762 --- [nio-8080-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:16:3586] DEBUG 24762 --- [nio-8080-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:16:3587] DEBUG 24762 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:56:16:3597] DEBUG 24762 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:17:3925] DEBUG 24762 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 01:56:17:3927] DEBUG 24762 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 01:56:17:3950] DEBUG 24762 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 01:56:17:3952] DEBUG 24762 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 01:56:17:3964] DEBUG 24762 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+[2024-12-01 01:56:17:3965] DEBUG 24762 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:17:3965] DEBUG 24762 --- [nio-8080-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:17:3967] DEBUG 24762 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:56:17:3985] DEBUG 24762 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 01:56:17:3985] DEBUG 24762 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 01:56:17:4123] DEBUG 24762 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 01:56:17:4123] DEBUG 24762 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 01:56:17:4124] DEBUG 24762 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:18:4799] DEBUG 24762 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 01:56:18:4801] DEBUG 24762 --- [io-8080-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:18:4804] DEBUG 24762 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:56:18:4825] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 01:56:18:4826] DEBUG 24762 --- [nio-8080-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:18:4834] DEBUG 24762 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:18:4921] DEBUG 24762 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 01:56:18:4922] DEBUG 24762 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 01:56:18:4924] DEBUG 24762 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 01:56:18:4925] DEBUG 24762 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 01:56:18:4927] DEBUG 24762 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:18:4938] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 01:56:18:4938] DEBUG 24762 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 01:56:18:4942] DEBUG 24762 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 01:56:18:4942] DEBUG 24762 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 01:56:18:4946] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:18:5518] DEBUG 24762 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 01:56:18:5520] DEBUG 24762 --- [nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:18:5523] DEBUG 24762 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:56:18:5542] DEBUG 24762 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 01:56:18:5543] DEBUG 24762 --- [nio-8080-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:56:18:5547] DEBUG 24762 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:18:5637] DEBUG 24762 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 01:56:18:5638] DEBUG 24762 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 01:56:18:5642] DEBUG 24762 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 01:56:18:5642] DEBUG 24762 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 01:56:18:5644] DEBUG 24762 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:18:5657] DEBUG 24762 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 01:56:18:5657] DEBUG 24762 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 01:56:18:5665] DEBUG 24762 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 01:56:18:5666] DEBUG 24762 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 01:56:18:5667] DEBUG 24762 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:56:38:25554] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 01:56:38:25556] DEBUG 24762 --- [nio-8080-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[2024-12-01 01:56:38:25560] DEBUG 24762 --- [nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-01 01:56:38:25563] DEBUG 24762 --- [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/coupon/generate.]
+[2024-12-01 01:56:38:25563] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-01 01:56:38:25569] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:56:38:25570] DEBUG 24762 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:56:38:25573] DEBUG 24762 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:56:38:25573] DEBUG 24762 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:56:38 KST 2024, status=404, error=Not Found, path=/api/coupon/generate}]
+[2024-12-01 01:56:38:25575] DEBUG 24762 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-01 01:56:44:2189] DEBUG 25016 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 01:56:45:2384] DEBUG 25016 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 01:56:45:2405] DEBUG 25016 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 01:56:45:2433] DEBUG 25016 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 01:56:45:3368] INFO  25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 01:56:45:3368] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 01:56:45:3368] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 01:56:45:3368] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 01:56:45:3369] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6f749a1f
+[2024-12-01 01:56:45:3369] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@35920655
+[2024-12-01 01:56:45:3369] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 01:56:45:3369] INFO  25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[2024-12-01 01:56:45:3372] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 01:56:45:3376] DEBUG 25016 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 01:56:46:3476] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.CouponTopic.name
+[2024-12-01 01:56:46:3479] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:56:46:3480] DEBUG 25016 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:56:46:3490] DEBUG 25016 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:56:46:3491] DEBUG 25016 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:56:46 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 01:56:46:3509] DEBUG 25016 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 01:56:46:4319] DEBUG 25016 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 01:56:46:4320] DEBUG 25016 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 01:56:46:4340] DEBUG 25016 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.CouponTopic.name
+[2024-12-01 01:56:46:4342] DEBUG 25016 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:56:46:4343] DEBUG 25016 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:56:46:4344] DEBUG 25016 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:56:46:4344] DEBUG 25016 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:56:46 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 01:56:46:4345] DEBUG 25016 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 01:58:04:2314] DEBUG 25685 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 01:58:04:2517] DEBUG 25685 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 01:58:04:2539] DEBUG 25685 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 01:58:04:2566] DEBUG 25685 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 01:58:14:13108] INFO  25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 01:58:14:13108] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 01:58:14:13108] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 01:58:14:13108] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 01:58:14:13109] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c914364
+[2024-12-01 01:58:14:13109] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@38816a6c
+[2024-12-01 01:58:14:13110] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 01:58:14:13110] INFO  25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 01:58:14:13114] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 01:58:14:13120] DEBUG 25685 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 01:58:14:13225] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.CouponTopic.name
+[2024-12-01 01:58:14:13229] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:58:14:13230] DEBUG 25685 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:58:14:13241] DEBUG 25685 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:58:14:13242] DEBUG 25685 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:58:14 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 01:58:14:13260] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 01:58:21:19451] DEBUG 25685 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 01:58:21:19456] DEBUG 25685 --- [nio-8080-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:58:21:19467] DEBUG 25685 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:58:21:19493] DEBUG 25685 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 01:58:21:19496] DEBUG 25685 --- [nio-8080-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:58:21:19504] DEBUG 25685 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:58:21:19606] DEBUG 25685 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 01:58:21:19607] DEBUG 25685 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 01:58:21:19609] DEBUG 25685 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 01:58:21:19609] DEBUG 25685 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 01:58:21:19610] DEBUG 25685 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:58:21:19627] DEBUG 25685 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 01:58:21:19627] DEBUG 25685 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 01:58:21:19767] DEBUG 25685 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 01:58:21:19767] DEBUG 25685 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 01:58:21:19768] DEBUG 25685 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:58:25:23974] DEBUG 25685 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate?topic=string&count=0&userId=string", parameters={masked}
+[2024-12-01 01:58:25:23975] DEBUG 25685 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 01:58:25:24057] DEBUG 25685 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:58:25:24058] DEBUG 25685 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 01:58:25:24058] DEBUG 25685 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:58:56:54881] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 01:58:56:54883] DEBUG 25685 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 01:58:56:54902] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.CouponTopic.name
+[2024-12-01 01:58:56:54903] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 01:58:56:54904] DEBUG 25685 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 01:58:56:54905] DEBUG 25685 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 01:58:56:54906] DEBUG 25685 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 01:58:56 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 01:58:56:54907] DEBUG 25685 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 01:59:49:2187] DEBUG 26546 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 01:59:49:2381] DEBUG 26546 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 01:59:49:2400] DEBUG 26546 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 01:59:49:2429] DEBUG 26546 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 01:59:55:8060] INFO  26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 01:59:55:8060] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 01:59:55:8060] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 01:59:55:8060] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 01:59:55:8061] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@64547a83
+[2024-12-01 01:59:55:8061] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@51179fad
+[2024-12-01 01:59:55:8062] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 01:59:55:8062] INFO  26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 01:59:55:8067] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 01:59:55:8072] DEBUG 26546 --- [nio-8080-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:59:55:8085] DEBUG 26546 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 01:59:55:8116] DEBUG 26546 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 01:59:55:8117] DEBUG 26546 --- [nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 01:59:55:8140] DEBUG 26546 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:59:55:8239] DEBUG 26546 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 01:59:55:8247] DEBUG 26546 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 01:59:55:8267] DEBUG 26546 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 01:59:55:8268] DEBUG 26546 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 01:59:55:8272] DEBUG 26546 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 01:59:55:8291] DEBUG 26546 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 01:59:55:8294] DEBUG 26546 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 01:59:55:8464] DEBUG 26546 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 01:59:55:8464] DEBUG 26546 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 01:59:55:8465] DEBUG 26546 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:01:14276] DEBUG 26546 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate?topic=string&count=0&userId=string", parameters={masked}
+[2024-12-01 02:00:01:14276] DEBUG 26546 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 02:00:01:14426] DEBUG 26546 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 02:00:01:14426] DEBUG 26546 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 02:00:01:14427] DEBUG 26546 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:21:2314] DEBUG 26805 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 02:00:21:2527] DEBUG 26805 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 02:00:21:2548] DEBUG 26805 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 02:00:21:2578] DEBUG 26805 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 02:00:26:7854] INFO  26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 02:00:26:7855] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 02:00:26:7855] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 02:00:26:7855] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 02:00:26:7855] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70199db0
+[2024-12-01 02:00:26:7856] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ab959e8
+[2024-12-01 02:00:26:7856] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 02:00:26:7856] INFO  26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 02:00:26:7860] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 02:00:26:7863] DEBUG 26805 --- [nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:26:7877] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:26:7902] DEBUG 26805 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 02:00:26:7902] DEBUG 26805 --- [nio-8080-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:26:7915] DEBUG 26805 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:27:8189] DEBUG 26805 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 02:00:27:8193] DEBUG 26805 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 02:00:27:8205] DEBUG 26805 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 02:00:27:8209] DEBUG 26805 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 02:00:27:8215] DEBUG 26805 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:27:8235] DEBUG 26805 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 02:00:27:8235] DEBUG 26805 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 02:00:27:8367] DEBUG 26805 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 02:00:27:8368] DEBUG 26805 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 02:00:27:8368] DEBUG 26805 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:29:10192] DEBUG 26805 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 02:00:29:10195] DEBUG 26805 --- [nio-8080-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:29:10204] DEBUG 26805 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 02:00:29:10225] DEBUG 26805 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 02:00:29:10226] DEBUG 26805 --- [nio-8080-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:29:10229] DEBUG 26805 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:29:10310] DEBUG 26805 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 02:00:29:10311] DEBUG 26805 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 02:00:29:10316] DEBUG 26805 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 02:00:29:10316] DEBUG 26805 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 02:00:29:10319] DEBUG 26805 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:29:10330] DEBUG 26805 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 02:00:29:10331] DEBUG 26805 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 02:00:29:10337] DEBUG 26805 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 02:00:29:10338] DEBUG 26805 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 02:00:29:10340] DEBUG 26805 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:33:14922] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 02:00:33:14923] DEBUG 26805 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 02:00:33:14941] DEBUG 26805 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@2c94da2e]
+[2024-12-01 02:00:34:15059] DEBUG 26805 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 02:00:34:15059] DEBUG 26805 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 02:00:34:15060] DEBUG 26805 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:48:2353] DEBUG 26978 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 02:00:48:2558] DEBUG 26978 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 02:00:48:2579] DEBUG 26978 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 02:00:48:2610] DEBUG 26978 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 02:00:50:4346] INFO  26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 02:00:50:4346] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 02:00:50:4346] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 02:00:50:4347] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 02:00:50:4347] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39d4f046
+[2024-12-01 02:00:50:4348] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2bdf6c7c
+[2024-12-01 02:00:50:4348] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 02:00:50:4348] INFO  26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 02:00:50:4353] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 02:00:50:4358] DEBUG 26978 --- [nio-8080-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:50:4377] DEBUG 26978 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:50:4397] DEBUG 26978 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 02:00:50:4398] DEBUG 26978 --- [nio-8080-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:50:4412] DEBUG 26978 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:50:4484] DEBUG 26978 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 02:00:50:4489] DEBUG 26978 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 02:00:50:4509] DEBUG 26978 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 02:00:50:4510] DEBUG 26978 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 02:00:50:4514] DEBUG 26978 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:50:4519] DEBUG 26978 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 02:00:50:4520] DEBUG 26978 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 02:00:50:4653] DEBUG 26978 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 02:00:50:4654] DEBUG 26978 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 02:00:50:4654] DEBUG 26978 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:51:5194] DEBUG 26978 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-01 02:00:51:5196] DEBUG 26978 --- [nio-8080-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:51:5200] DEBUG 26978 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-01 02:00:51:5219] DEBUG 26978 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-01 02:00:51:5221] DEBUG 26978 --- [nio-8080-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-01 02:00:51:5224] DEBUG 26978 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:51:5296] DEBUG 26978 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-01 02:00:51:5297] DEBUG 26978 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-01 02:00:51:5301] DEBUG 26978 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-01 02:00:51:5301] DEBUG 26978 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+[2024-12-01 02:00:51:5303] DEBUG 26978 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:51:5315] DEBUG 26978 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-01 02:00:51:5315] DEBUG 26978 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-01 02:00:51:5323] DEBUG 26978 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-01 02:00:51:5323] DEBUG 26978 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-01 02:00:51:5325] DEBUG 26978 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:00:54:8152] DEBUG 26978 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 02:00:54:8152] DEBUG 26978 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequest)
+[2024-12-01 02:00:54:8171] DEBUG 26978 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@7326bc11]
+[2024-12-01 02:00:54:8292] DEBUG 26978 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 02:00:54:8292] DEBUG 26978 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 02:00:54:8293] DEBUG 26978 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 02:48:10:2279] DEBUG 49801 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 02:48:10:2472] DEBUG 49801 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 02:48:10:2491] DEBUG 49801 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 02:48:10:2519] DEBUG 49801 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 02:52:13:2376] DEBUG 51732 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 02:52:13:2575] DEBUG 51732 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 02:52:13:2596] DEBUG 51732 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 02:52:14:2627] DEBUG 51732 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 02:53:14:63445] INFO  51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 02:53:14:63445] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 02:53:14:63445] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 02:53:14:63445] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 02:53:14:63447] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@41c05747
+[2024-12-01 02:53:14:63447] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5702232d
+[2024-12-01 02:53:14:63447] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 02:53:14:63447] INFO  51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 02:53:14:63452] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 02:53:14:63459] DEBUG 51732 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 02:53:14:63501] DEBUG 51732 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@d7f360a]
+[2024-12-01 02:53:15:63615] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 02:53:15:63619] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 02:53:15:63620] DEBUG 51732 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 02:53:15:63628] DEBUG 51732 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 02:53:15:63629] DEBUG 51732 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 02:53:15 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 02:53:15:63638] DEBUG 51732 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:00:53:2309] DEBUG 56008 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 03:00:53:2523] DEBUG 56008 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 03:00:53:2544] DEBUG 56008 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 03:00:53:2573] DEBUG 56008 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 03:01:26:2315] DEBUG 56266 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 03:01:27:2521] DEBUG 56266 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 03:01:27:2542] DEBUG 56266 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 03:01:27:2571] DEBUG 56266 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 03:01:29:4393] INFO  56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 03:01:29:4393] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 03:01:29:4394] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 03:01:29:4394] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 03:01:29:4395] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6812708d
+[2024-12-01 03:01:29:4395] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@e417628
+[2024-12-01 03:01:29:4395] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 03:01:29:4395] INFO  56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 03:01:29:4398] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:01:29:4403] DEBUG 56266 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:01:29:4441] DEBUG 56266 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@14b12056]
+[2024-12-01 03:01:29:4548] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:01:29:4551] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:01:29:4552] DEBUG 56266 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:01:29:4558] DEBUG 56266 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:01:29:4559] DEBUG 56266 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:01:29 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:01:29:4569] DEBUG 56266 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:02:13:2186] DEBUG 56694 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 03:02:13:2386] DEBUG 56694 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 03:02:13:2406] DEBUG 56694 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 03:02:14:2435] DEBUG 56694 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 03:02:15:3801] INFO  56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 03:02:15:3802] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 03:02:15:3802] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 03:02:15:3802] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 03:02:15:3803] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@41c05747
+[2024-12-01 03:02:15:3803] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5702232d
+[2024-12-01 03:02:15:3803] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 03:02:15:3803] INFO  56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[2024-12-01 03:02:15:3807] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:02:15:3812] DEBUG 56694 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:02:15:3854] DEBUG 56694 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@7ed0e7c2]
+[2024-12-01 03:02:15:3958] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:02:15:3962] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:02:15:3962] DEBUG 56694 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:02:15:3969] DEBUG 56694 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:02:15:3970] DEBUG 56694 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:02:15 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:02:15:3980] DEBUG 56694 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:02:26:14556] DEBUG 56694 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:02:26:14557] DEBUG 56694 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:02:26:14559] DEBUG 56694 --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@8b184ab]
+[2024-12-01 03:02:26:14586] DEBUG 56694 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:02:26:14586] DEBUG 56694 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:02:26:14586] DEBUG 56694 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:02:26:14587] DEBUG 56694 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:02:26:14587] DEBUG 56694 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:02:26 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:02:26:14587] DEBUG 56694 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:02:55:2215] DEBUG 57056 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 03:02:55:2416] DEBUG 57056 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 03:02:55:2437] DEBUG 57056 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 03:02:55:2465] DEBUG 57056 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 03:02:55:2933] INFO  57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 03:02:55:2933] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 03:02:55:2933] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 03:02:55:2934] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 03:02:55:2934] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@354baab2
+[2024-12-01 03:02:55:2935] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@ba90170
+[2024-12-01 03:02:55:2935] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 03:02:55:2935] INFO  57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[2024-12-01 03:02:55:2939] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:02:55:2945] DEBUG 57056 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:02:55:2986] DEBUG 57056 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@43bf8efb]
+[2024-12-01 03:02:55:3088] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:02:55:3092] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:02:55:3093] DEBUG 57056 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:02:55:3100] DEBUG 57056 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:02:55:3101] DEBUG 57056 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:02:55 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:02:55:3111] DEBUG 57056 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:02:56:4073] DEBUG 57056 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:02:56:4074] DEBUG 57056 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:02:56:4077] DEBUG 57056 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@6e103fdd]
+[2024-12-01 03:02:56:4104] DEBUG 57056 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:02:56:4105] DEBUG 57056 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:02:56:4105] DEBUG 57056 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:02:56:4106] DEBUG 57056 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:02:56:4106] DEBUG 57056 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:02:56 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:02:56:4106] DEBUG 57056 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:07:50:2252] DEBUG 59435 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-01 03:07:50:2458] DEBUG 59435 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-01 03:07:50:2478] DEBUG 59435 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-01 03:07:50:2506] DEBUG 59435 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-01 03:07:52:4110] INFO  59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2024-12-01 03:07:52:4110] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2024-12-01 03:07:52:4110] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2024-12-01 03:07:52:4110] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2024-12-01 03:07:52:4111] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3393aa46
+[2024-12-01 03:07:52:4111] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3dfe520
+[2024-12-01 03:07:52:4111] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2024-12-01 03:07:52:4112] INFO  59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[2024-12-01 03:07:52:4116] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:07:52:4124] DEBUG 59435 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:07:52:4168] DEBUG 59435 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@c210e71]
+[2024-12-01 03:07:52:4272] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:07:52:4276] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:07:52:4277] DEBUG 59435 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:07:52:4284] DEBUG 59435 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:07:52:4285] DEBUG 59435 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:07:52 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:07:52:4297] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:07:59:11481] DEBUG 59435 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:07:59:11482] DEBUG 59435 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:07:59:11484] DEBUG 59435 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@648fa7f3]
+[2024-12-01 03:07:59:11532] DEBUG 59435 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:07:59:11532] DEBUG 59435 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 03:07:59:11534] DEBUG 59435 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 03:08:36:48892] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:08:36:48894] DEBUG 59435 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:08:36:48897] DEBUG 59435 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@8b184ab]
+[2024-12-01 03:08:36:48920] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:08:36:48922] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:08:36:48923] DEBUG 59435 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:08:36:48925] DEBUG 59435 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:08:36:48925] DEBUG 59435 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:08:36 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:08:36:48926] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:09:04:76173] DEBUG 59435 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:09:04:76174] DEBUG 59435 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:09:04:76175] DEBUG 59435 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@55270da9]
+[2024-12-01 03:09:04:76202] DEBUG 59435 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:09:04:76202] DEBUG 59435 --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 03:09:04:76203] DEBUG 59435 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 03:09:34:106263] DEBUG 59435 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:09:34:106264] DEBUG 59435 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:09:34:106265] DEBUG 59435 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@1bf8b5fa]
+[2024-12-01 03:09:34:106285] DEBUG 59435 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:09:34:106285] DEBUG 59435 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 03:09:34:106287] DEBUG 59435 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 03:10:17:149367] DEBUG 59435 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:10:17:149368] DEBUG 59435 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:10:17:149370] DEBUG 59435 --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@6f74671a]
+[2024-12-01 03:10:17:149399] DEBUG 59435 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:10:17:149401] DEBUG 59435 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:10:17:149402] DEBUG 59435 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:10:17:149403] DEBUG 59435 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:10:17:149403] DEBUG 59435 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:10:17 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:10:17:149404] DEBUG 59435 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:10:58:190802] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:10:58:190804] DEBUG 59435 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:10:58:190806] DEBUG 59435 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@2c0ed717]
+[2024-12-01 03:10:58:190833] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:10:58:190835] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:10:58:190835] DEBUG 59435 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:10:58:190836] DEBUG 59435 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:10:58:190836] DEBUG 59435 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:10:58 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:10:58:190837] DEBUG 59435 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:11:25:217551] DEBUG 59435 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:11:25:217553] DEBUG 59435 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:11:25:217556] DEBUG 59435 --- [nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@12e51bc4]
+[2024-12-01 03:11:25:217583] DEBUG 59435 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:11:25:217585] DEBUG 59435 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:11:25:217586] DEBUG 59435 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:11:25:217587] DEBUG 59435 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:11:25:217587] DEBUG 59435 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:11:25 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:11:25:217588] DEBUG 59435 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:12:30:283018] DEBUG 59435 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:12:30:283018] DEBUG 59435 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:12:30:283023] DEBUG 59435 --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@761b1f78]
+[2024-12-01 03:12:30:283049] DEBUG 59435 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:12:30:283050] DEBUG 59435 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:12:30:283051] DEBUG 59435 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:12:30:283054] DEBUG 59435 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:12:30:283055] DEBUG 59435 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:12:30 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:12:30:283056] DEBUG 59435 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:13:06:318927] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:13:06:318928] DEBUG 59435 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:13:06:318929] DEBUG 59435 --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@619f1932]
+[2024-12-01 03:13:06:318956] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:13:06:318957] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:13:06:318958] DEBUG 59435 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:13:06:318959] DEBUG 59435 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:13:06:318959] DEBUG 59435 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:13:06 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:13:06:318960] DEBUG 59435 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+[2024-12-01 03:13:22:334297] DEBUG 59435 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:13:22:334298] DEBUG 59435 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:13:22:334301] DEBUG 59435 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@bd99d89]
+[2024-12-01 03:13:22:334329] DEBUG 59435 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:13:22:334329] DEBUG 59435 --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[]]
+[2024-12-01 03:13:22:334329] DEBUG 59435 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-01 03:13:26:338723] DEBUG 59435 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-01 03:13:26:338724] DEBUG 59435 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-01 03:13:26:338725] DEBUG 59435 --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@31f98bc7]
+[2024-12-01 03:13:26:338747] DEBUG 59435 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value: com.wemade.coupon.entity.Coupon.code
+[2024-12-01 03:13:26:338748] DEBUG 59435 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+[2024-12-01 03:13:26:338749] DEBUG 59435 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-01 03:13:26:338750] DEBUG 59435 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+[2024-12-01 03:13:26:338750] DEBUG 59435 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 01 03:13:26 KST 2024, status=500, error=Internal Server Error, path=/api/coupon/g (truncated)...]
+[2024-12-01 03:13:26:338751] DEBUG 59435 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500

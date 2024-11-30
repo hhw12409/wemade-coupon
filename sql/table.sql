@@ -1,0 +1,21 @@
+-- 쿠폰 주제 테이블
+CREATE TABLE coupon_topic (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE,
+    isActive BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 쿠폰 테이블
+CREATE TABLE coupon (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    code VARCHAR(16) NOT NULL UNIQUE,
+    topic_id BIGINT NOT NULL,
+    is_redeemed BOOLEAN DEFAULT FALSE,
+    user_id varchar(20) NOT NULL ,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (topic_id) REFERENCES coupon_topic(id)
+);
+
+CREATE INDEX idx_coupon_topic_id ON coupon (topic_id);

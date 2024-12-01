@@ -10,8 +10,7 @@ spring:
     username: root
     password: root
 
-
-  logging:
-    file:
-      path: ./logs
-    config: classpath:logback-spring.xml
+logging:
+  file:
+    path: ./logs
+  config: classpath:logback-spring.xml

@@ -1,9 +1,10 @@
 package com.wemade.coupon.controller;
 
 import com.wemade.coupon.annotation.LoggerTarget;
+import com.wemade.coupon.dto.request.DeactivateCouponRequestDto;
 import com.wemade.coupon.dto.request.GenerateCouponRequestDto;
+import com.wemade.coupon.dto.request.RedeemCouponRequestDto;
 import com.wemade.coupon.dto.response.GenerateCouponResponseDto;
-import com.wemade.coupon.entity.Coupon;
 import com.wemade.coupon.service.CouponService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -31,19 +32,14 @@ public class CouponController {
   @LoggerTarget
   @Operation(summary = "쿠폰 사용", description = "사용자가 쿠폰을 사용합니다.")
   @PostMapping("/redeem")
-  public ResponseEntity<Void> redeemCoupon(
-          @RequestBody String code,
-          @RequestBody String userId
-          ) {
-    return couponService.redeemCoupon(code, userId);
+  public ResponseEntity<Void> redeemCoupon(@RequestBody RedeemCouponRequestDto request) {
+    return couponService.redeemCoupon(request);
   }
 
   @LoggerTarget
   @Operation(summary = "쿠폰 비활성화", description = "특정 주제의 쿠폰을 비활성화합니다.")
   @PostMapping("/deactivate")
-  public ResponseEntity<Void> deactivateCoupons(
-          @RequestBody String topic
-  ) {
-    return couponService.deactivateCoupons(topic);
+  public ResponseEntity<Void> deactivateCoupons(@RequestBody DeactivateCouponRequestDto request) {
+    return couponService.deactivateCoupons(request);
   }
 }

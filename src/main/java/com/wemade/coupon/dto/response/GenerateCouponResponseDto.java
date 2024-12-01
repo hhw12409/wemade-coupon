@@ -24,7 +24,7 @@ public class GenerateCouponResponseDto {
   @Column(nullable = false)
   private Boolean isRedeemed;
 
-  private String userId;
+  private String description;
 
   private LocalDateTime createdAt;
 
@@ -35,7 +35,7 @@ public class GenerateCouponResponseDto {
     this.code = coupon.getCode();
     this.topic = coupon.getTopic();
     this.isRedeemed = coupon.getIsRedeemed();
-    this.userId = coupon.getUserId();
+    this.description = coupon.getDescription();
     this.createdAt = coupon.getCreatedAt();
     this.updatedAt = coupon.getUpdatedAt();
   }

@@ -13,13 +13,10 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 @Aspect
 @Component
 @Slf4j
-// TODO : API 호출 로깅 형태 수정
 public class LoggingAspect {
   private final String ANNOTATION_LOGGER_TARGET = "@annotation(com.wemade.coupon.annotation.LoggerTarget)";
   private final ObjectMapper objectMapper = new ObjectMapper();

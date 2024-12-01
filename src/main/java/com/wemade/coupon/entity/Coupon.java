@@ -24,18 +24,22 @@ public class Coupon {
 
   private Boolean isRedeemed;
 
-  private String userId;
+  private String description;
 
   private LocalDateTime createdAt;
 
   private LocalDateTime updatedAt;
 
-  public Coupon(String code, CouponTopic topic, String userId) {
+  public Coupon(String code, CouponTopic topic, String description) {
     this.code = code;
     this.topic = topic;
     this.isRedeemed = false;
-    this.userId = userId;
+    this.description = description;
     this.createdAt = LocalDateTime.now();
     this.updatedAt = LocalDateTime.now();
+  }
+
+  public void redeem() {
+    this.isRedeemed = true;
   }
 }

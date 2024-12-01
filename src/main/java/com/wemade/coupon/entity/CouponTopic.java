@@ -1,6 +1,5 @@
 package com.wemade.coupon.entity;
 
-import com.wemade.coupon.dto.request.GenerateCouponRequestDto;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,8 +22,15 @@ public class CouponTopic {
 
   private LocalDateTime createdAt;
 
+  private Boolean isActive;
+
   public CouponTopic(String name) {
     this.name = name;
     this.createdAt = LocalDateTime.now();
+    this.isActive = true;
+  }
+
+  public void deactivate() {
+    this.isActive = false;
   }
 }

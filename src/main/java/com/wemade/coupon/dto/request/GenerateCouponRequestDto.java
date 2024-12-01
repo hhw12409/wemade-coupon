@@ -7,5 +7,5 @@ import lombok.*;
 public class GenerateCouponRequestDto {
   private String topic;
   private int count;
-  private String userId;
+  private String description;
 }

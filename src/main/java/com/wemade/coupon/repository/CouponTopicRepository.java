@@ -7,4 +7,5 @@ import java.util.Optional;
 
 public interface CouponTopicRepository extends JpaRepository<CouponTopic, Long> {
   Optional<CouponTopic> findByName(String name);
+  Optional<CouponTopic> findCouponTopicById(Long topicId);
 }

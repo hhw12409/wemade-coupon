@@ -1,5 +1,6 @@
 package com.wemade.coupon.aop;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -20,6 +22,8 @@ import java.util.stream.Collectors;
 // TODO : API 호출 로깅 형태 수정
 public class LoggingAspect {
   private final String ANNOTATION_LOGGER_TARGET = "@annotation(com.wemade.coupon.annotation.LoggerTarget)";
+  private final ObjectMapper objectMapper = new ObjectMapper();
+
   @Before(ANNOTATION_LOGGER_TARGET)
   public void loggingBefore(JoinPoint joinPoint) {
     HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
@@ -39,8 +43,12 @@ public class LoggingAspect {
   }
 
   private String getPayload(JoinPoint joinPoint) {
-    return Arrays.stream(joinPoint.getArgs())
-            .map(Object::toString)
-            .collect(Collectors.joining(", "));
+    Object[] args = joinPoint.getArgs();
+    try {
+      return objectMapper.writeValueAsString(args);
+    } catch (IOException e) {
+      log.error("request payload 에러 발생", e);
+      return "request payload 에러 발생";
+    }
   }
 }

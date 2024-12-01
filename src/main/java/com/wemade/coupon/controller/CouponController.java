@@ -24,7 +24,7 @@ public class CouponController {
   @LoggerTarget
   @Operation(summary = "쿠폰 생성", description = "💡쿠폰코드는 사용자별 1회 사용이 가능합니다.\n쿠폰 코드는 숫자와 알파벳을 혼용하여 16자리로 구성됩니다.")
   @PostMapping("/generate")
-  public ResponseEntity<List<GenerateCouponResponseDto>>  generateCoupon(@RequestBody GenerateCouponRequestDto request) {
+  public ResponseEntity<List<GenerateCouponResponseDto>> generateCoupon(@RequestBody GenerateCouponRequestDto request) {
     return couponService.generateCoupons(request);
   }
 

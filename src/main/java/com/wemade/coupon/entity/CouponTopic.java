@@ -25,5 +25,6 @@ public class CouponTopic {
 
   public CouponTopic(String name) {
     this.name = name;
+    this.createdAt = LocalDateTime.now();
   }
 }

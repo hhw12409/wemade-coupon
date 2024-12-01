@@ -1,18 +1,16 @@
 package com.wemade.coupon.dto.response;
 
+import com.wemade.coupon.entity.Coupon;
 import com.wemade.coupon.entity.CouponTopic;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+@ToString
 public class GenerateCouponResponseDto {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,8 +19,6 @@ public class GenerateCouponResponseDto {
   @Column(unique = true, nullable = false, length = 16)
   private String code;
 
-  @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "topic_id", nullable = false)
   private CouponTopic topic;
 
   @Column(nullable = false)
@@ -33,4 +29,14 @@ public class GenerateCouponResponseDto {
   private LocalDateTime createdAt;
 
   private LocalDateTime updatedAt;
+
+  public GenerateCouponResponseDto(Coupon coupon) {
+    this.id = coupon.getId();
+    this.code = coupon.getCode();
+    this.topic = coupon.getTopic();
+    this.isRedeemed = coupon.getIsRedeemed();
+    this.userId = coupon.getUserId();
+    this.createdAt = coupon.getCreatedAt();
+    this.updatedAt = coupon.getUpdatedAt();
+  }
 }

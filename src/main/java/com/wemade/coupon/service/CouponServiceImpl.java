@@ -26,19 +26,22 @@ public class CouponServiceImpl implements CouponService {
   @Transactional
   @Override
   public ResponseEntity<List<GenerateCouponResponseDto>> generateCoupons(GenerateCouponRequestDto request) {
-    validationCount(request);
+    // 쿠폰 생성 count가 0 이하일 경우 BadRequestException 발생
+    if (request.getCount() <= 0) throw new BadRequestException(ExceptionCode.INVALID_REQUEST);
 
+    // 1. CouponTopic을 찾거나 생성
     CouponTopic couponTopic = couponTopicRepository.findByName(request.getTopic())
             .orElseGet(() -> couponTopicRepository.save(new CouponTopic(request.getTopic())));
 
+    // 2. count만큼 쿠폰 생성
     for (int i = 0; i < request.getCount(); i++) {
       String code = RandomUtil.generateRandomString();
-      couponRepository.save(new Coupon(code, couponTopic, request.getUserId()));
+      Coupon coupon = new Coupon(code, couponTopic, request.getUserId());
+      couponRepository.save(coupon);
     }
+
     return new ResponseEntity<>(couponRepository.findByTopic(couponTopic), HttpStatus.OK);
   }
-
-
 
   @Transactional
   @Override
@@ -48,8 +51,8 @@ public class CouponServiceImpl implements CouponService {
     if (coupon.getIsRedeemed()) {
       throw new IllegalStateException("Coupon has already been redeemed.");
     }
-    coupon.setIsRedeemed(true);
-    coupon.setUserId(userId);
+//    coupon.setIsRedeemed(true);
+//    coupon.setUserId(userId);
     couponRepository.save(coupon);
     return ResponseEntity.ok().build();
   }
@@ -59,17 +62,12 @@ public class CouponServiceImpl implements CouponService {
   public ResponseEntity<Void> deactivateCoupons(String topicName) {
     CouponTopic topic = couponTopicRepository.findByName(topicName)
             .orElseThrow(() -> new IllegalArgumentException("Topic not found."));
-    List<GenerateCouponResponseDto> coupons = couponRepository.findByTopic(topic);
+//    List<GenerateCouponResponseDto> coupons = couponRepository.findByTopic(topic);
 
-    for (GenerateCouponResponseDto coupon : coupons) {
-      coupon.setIsRedeemed(true);
+//    for (GenerateCouponResponseDto coupon : coupons) {
+//      coupon.setIsRedeemed(true);
       // couponRepository.save(coupon);
-    }
+//    }
     return ResponseEntity.ok().build();
-  }
-
-  // Helper method
-  private static void validationCount(GenerateCouponRequestDto request) {
-    if (request.getCount() <= 0) throw new BadRequestException(ExceptionCode.INVALID_REQUEST);
   }
 }

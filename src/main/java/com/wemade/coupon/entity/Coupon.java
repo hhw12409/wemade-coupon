@@ -7,11 +7,9 @@ import java.time.LocalDateTime;
 
 
 @Getter
-@Setter
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "coupon")
 public class Coupon {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,6 +33,9 @@ public class Coupon {
   public Coupon(String code, CouponTopic topic, String userId) {
     this.code = code;
     this.topic = topic;
+    this.isRedeemed = false;
     this.userId = userId;
+    this.createdAt = LocalDateTime.now();
+    this.updatedAt = LocalDateTime.now();
   }
 }

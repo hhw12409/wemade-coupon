@@ -1,17 +1,15 @@
 package com.wemade.coupon.entity;
 
+import com.wemade.coupon.utils.DateUtil;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
 
-
-
 @Getter
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "coupon_topic")
 public class CouponTopic {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +24,7 @@ public class CouponTopic {
 
   public CouponTopic(String name) {
     this.name = name;
-    this.createdAt = LocalDateTime.now();
+    this.createdAt = DateUtil.currentDateTime();
     this.isActive = true;
   }
 

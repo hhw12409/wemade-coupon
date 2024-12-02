@@ -12,6 +12,7 @@ import com.wemade.coupon.repository.CouponRepository;
 import com.wemade.coupon.repository.CouponTopicRepository;
 import com.wemade.coupon.utils.RandomUtil;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class CouponServiceImpl implements CouponService {
   private final CouponRepository couponRepository;
@@ -31,6 +33,7 @@ public class CouponServiceImpl implements CouponService {
   public ResponseEntity<List<GenerateCouponResponseDto>> generateCoupons(GenerateCouponRequestDto request) {
     // 쿠폰 생성 count가 0 이하일 경우 BAD_REQUEST 발생
     if (request.getCount() <= 0) {
+      log.info("쿠폰 생성 수량이 0개 입니다.");
       return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     };
 
@@ -65,10 +68,6 @@ public class CouponServiceImpl implements CouponService {
       throw new IllegalStateException("사용이 정지된 쿠폰 입니다.");
     }
 
-    if (coupon.getIsRedeemed()) {
-      throw new IllegalStateException("이미 사용이 완료된 쿠폰입니다.");
-    }
-
     // 4. 사용자 로그 조회
     String userId = request.getUserId();
     couponRedemptionRepository.findByCouponAndUserId(coupon, userId)
@@ -76,11 +75,7 @@ public class CouponServiceImpl implements CouponService {
               throw new IllegalStateException("이미 쿠폰을 사용한 유저 입니다.");
             });
 
-    // 5. 쿠폰 사용 처리
-    coupon.redeem();
-    couponRepository.save(coupon);
-
-    // 6. 사용자 로그 저장
+    // 5. 사용자 로그 저장
     CouponRedeemLog redemptionLog = new CouponRedeemLog(coupon, userId);
     couponRedemptionRepository.save(redemptionLog);
     return new ResponseEntity<>(HttpStatus.OK);
@@ -91,7 +86,7 @@ public class CouponServiceImpl implements CouponService {
   public ResponseEntity<Void> deactivateCoupons(DeactivateCouponRequestDto request) {
     // 1. 주제 조회
     CouponTopic topic = couponTopicRepository.findCouponTopicById(request.getId())
-            .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 주제 입니다."));
+            .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 쿠폰 주제 입니다."));
     topic.deactivate();
 
     // 2. 주제 비활성화 처리

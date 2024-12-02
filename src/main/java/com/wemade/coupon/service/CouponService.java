@@ -5,6 +5,7 @@ import com.wemade.coupon.dto.request.GenerateCouponRequestDto;
 import com.wemade.coupon.dto.request.RedeemCouponRequestDto;
 import com.wemade.coupon.dto.response.GenerateCouponResponseDto;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.Errors;
 
 import java.util.List;
 

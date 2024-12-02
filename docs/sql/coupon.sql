@@ -1,3 +1,5 @@
+create schema coupon;
+
 -- 쿠폰 주제 테이블
 CREATE TABLE coupon_topic (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,

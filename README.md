@@ -16,7 +16,7 @@
 2. MySQL 설정
 3. `application.properties`에 DB 정보 입력
 4. Gradle 빌드: `./gradlew bootRun`
-5. Swagger로 API 테스트 가능. (http://localhost:8081/swagger-ui/index.html/)
+5. Swagger로 API 테스트 가능. (http://localhost:8081/swagger-ui/index.html#/)
   
 
 ## API Endpoints

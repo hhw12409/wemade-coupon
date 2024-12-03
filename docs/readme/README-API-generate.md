@@ -10,7 +10,7 @@ Endpoint : /api/coupon/generate <br/>
 ```json
 {
   "topic": "오픈 이벤트 프로모션",
-  "count": 10,
+  "count":4,
   "description": "오픈 이벤트 프로모션으로 발급되는 재화 지급 쿠폰 입니다."
 }
 ```

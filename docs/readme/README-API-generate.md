@@ -16,11 +16,11 @@ Endpoint : /api/coupon/generate <br/>
 ```
 
 ##### **Request Body Type**
-| Key         |   Type   | Required | Description |
-|-------------|:--------:|:---------|-------------|
-| topic       | `string` | `yes`    | 쿠폰 주제명      |
-| count       |  `int`   | `yes`    | 쿠폰 수량       |
-| description | `string` | `yes`    | 쿠폰 내용       |
+| Key         |   Type   | Required   | Description |
+|-------------|:--------:|:-----------|-------------|
+| topic       | `string` | `yes`      | 쿠폰 주제명      |
+| count       |  `int`   | `yes`      | 쿠폰 수량       |
+| description | `string` | `optional` | 쿠폰 내용       |
 
 ---
 ##### **Response**
@@ -81,15 +81,15 @@ Endpoint : /api/coupon/generate <br/>
 ]
 ```
 ##### **Response Type**
-| Key             |      Type       | Required | Description  |
-|-----------------|:---------------:|:--------:|--------------|
-| id              |      `int`      |  `yes`   | 쿠폰 ID        |
-| code            |    `string`     |  `yes`   | 쿠폰 CODE      |
-| topic           |    `object`     |  `yes`   | 쿠폰 주제        |
-| topic.id        |      `int`      |  `yes`   | 쿠폰 주제 ID     |
-| topic.name      |    `string`     |  `yes`   | 쿠폰 주제 이름     |
-| topic.createdAt | `LocalDateTime` |  `yes`   | 쿠폰 주제 생성일    |
-| topic.isActive  |    `Boolean`    |  `yes`   | 쿠폰 주제 활성화 여부 |
-| description     |    `String`     |  `yes`   | 쿠폰 설명        |
-| createdAt       | `LocalDateTime` |  `yes`   | 쿠폰 생성일       |
-| updateAt        | `LocalDateTime` |  `yes`   | 쿠폰 내용 수정일    |
+| Key             |      Type       |  Required  | Description  |
+|-----------------|:---------------:|:----------:|--------------|
+| id              |      `int`      |   `yes`    | 쿠폰 ID        |
+| code            |    `string`     |   `yes`    | 쿠폰 CODE      |
+| topic           |    `object`     |   `yes`    | 쿠폰 주제        |
+| topic.id        |      `int`      |   `yes`    | 쿠폰 주제 ID     |
+| topic.name      |    `string`     |   `yes`    | 쿠폰 주제 이름     |
+| topic.createdAt | `LocalDateTime` |   `yes`    | 쿠폰 주제 생성일    |
+| topic.isActive  |    `Boolean`    |   `yes`    | 쿠폰 주제 활성화 여부 |
+| description     |    `String`     | `optional` | 쿠폰 설명        |
+| createdAt       | `LocalDateTime` |   `yes`    | 쿠폰 생성일       |
+| updateAt        | `LocalDateTime` |   `yes`    | 쿠폰 내용 수정일    |

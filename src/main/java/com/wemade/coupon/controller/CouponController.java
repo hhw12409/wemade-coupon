@@ -23,14 +23,14 @@ public class CouponController {
   private final CouponService couponService;
 
   @LoggerTarget
-  @Operation(summary = "쿠폰 생성", description = "쿠폰코드는 사용자별 1회 사용이 가능합니다.\n쿠폰 코드는 숫자와 알파벳을 혼용하여 16자리로 구성됩니다.")
+  @Operation(summary = "쿠폰 생성", description = "쿠폰 코드는 숫자와 알파벳을 혼용하여 16자리로 구성됩니다.")
   @PostMapping("/generate")
   public ResponseEntity<List<GenerateCouponResponseDto>> generateCoupon(@RequestBody GenerateCouponRequestDto request) {
     return couponService.generateCoupons(request);
   }
 
   @LoggerTarget
-  @Operation(summary = "쿠폰 사용", description = "유저가 쿠폰을 사용합니다.")
+  @Operation(summary = "쿠폰 사용", description = "쿠폰코드는 사용자별 1회 사용이 가능합니다.")
   @PostMapping("/redeem")
   public ResponseEntity<Void> redeemCoupon(@RequestBody RedeemCouponRequestDto request) {
     return couponService.redeemCoupon(request);

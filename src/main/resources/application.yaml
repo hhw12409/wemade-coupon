@@ -11,6 +11,8 @@ spring:
     password: root
 
 logging:
+  level:
+    root: debug
   file:
     path: ./logs
   config: classpath:logback-spring.xml

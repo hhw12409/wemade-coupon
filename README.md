@@ -14,7 +14,7 @@
 ## 실행 방법
 1. 프로젝트 클론
 2. MySQL 설정
-3. `application.properties`에 DB 정보 입력
+3. `application.yaml`에 DB 정보 입력
 4. Gradle 빌드: `./gradlew bootRun`
 5. Swagger로 API 테스트 가능. (http://localhost:8081/swagger-ui/index.html#/)
   

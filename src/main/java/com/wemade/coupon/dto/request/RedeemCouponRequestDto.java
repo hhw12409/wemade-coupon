@@ -3,8 +3,10 @@ package com.wemade.coupon.dto.request;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @Schema(description = "쿠폰 사용 요청 DTO")
 public class RedeemCouponRequestDto {

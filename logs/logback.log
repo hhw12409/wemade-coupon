@@ -1609,3 +1609,16 @@
 [2024-12-03 17:27:41:39038] DEBUG 1832 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 [2024-12-03 17:27:42:39242] DEBUG 1832 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
 [2024-12-03 17:27:46:44079] DEBUG 1832 --- [ionShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6869a3b3, started on Tue Dec 03 17:27:06 KST 2024
+[2024-12-03 18:02:39:4233435] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/coupon/generate", parameters={}
+[2024-12-03 18:02:39:4233459] DEBUG 28184 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.wemade.coupon.controller.CouponController#generateCoupon(GenerateCouponRequestDto)
+[2024-12-03 18:02:39:4233608] DEBUG 28184 --- [nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.wemade.coupon.dto.request.GenerateCouponRequestDto@271e5db2]
+[2024-12-03 18:02:40:4234494] DEBUG 28184 --- [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.wemade.coupon.errors.handler.GlobalExceptionHandler#handleAllExceptions(Exception)
+[2024-12-03 18:02:40:4234504] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 18:02:40:4234505] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.wemade.coupon.errors.response.ErrorResponse@765dbfc1]
+[2024-12-03 18:02:40:4234518] DEBUG 28184 --- [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaSystemException: Specified result type [com.wemade.coupon.dto.response.GenerateCouponResponseDto] did not match Query selection type [com.wemade.coupon.entity.Coupon] - multiple selections: use Tuple or array]
+[2024-12-03 18:02:40:4234519] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+[2024-12-03 18:03:43:7248] DEBUG 24064 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@63bde6c2
+[2024-12-03 18:04:23:47966] DEBUG 24064 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-03 18:04:33:57821] DEBUG 24064 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-03 18:04:34:58227] DEBUG 24064 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-03 18:04:45:69764] DEBUG 24064 --- [ionShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@63bde6c2, started on Tue Dec 03 18:03:43 KST 2024

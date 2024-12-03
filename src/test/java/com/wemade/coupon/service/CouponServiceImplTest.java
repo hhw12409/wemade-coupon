@@ -1,19 +1,29 @@
 package com.wemade.coupon.service;
 
+import com.wemade.coupon.dto.request.GenerateCouponRequestDto;
+import com.wemade.coupon.dto.response.GenerateCouponResponseDto;
 import com.wemade.coupon.repository.CouponRedeemLogRepository;
 import com.wemade.coupon.repository.CouponRepository;
 import com.wemade.coupon.repository.CouponTopicRepository;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
 class CouponServiceImplTest {
+
+    @Autowired
+    private CouponService couponService;
 
     @Autowired
     private CouponRepository couponRepository;
@@ -28,6 +38,24 @@ class CouponServiceImplTest {
     @DisplayName("쿠폰 생성 테스트")
     void generateCoupons() {
         // given
+        GenerateCouponRequestDto request = new GenerateCouponRequestDto();
+        request.setTopic("오픈 이벤트 프로모션");
+        request.setCount(10);
+        request.setDescription("오픈 이벤트 프로모션으로 발급되는 재화 지급 쿠폰 입니다.");
+        // when
+        ResponseEntity<List<GenerateCouponResponseDto>> result = couponService.generateCoupons(request);
+        // then
+        assertThat(result.getBody().size()).isEqualTo(10);
+    }
+
+    @Test
+    @DisplayName("쿠폰 생성 테스트 : 쿠폰 설명이 없을 경우")
+    void generateCouponsWithNoDescription() {
+        // given
+        GenerateCouponRequestDto request = new GenerateCouponRequestDto();
+        request.setTopic("오픈 이벤트 프로모션");
+        request.setCount(10);
+        request.setDescription("오픈 이벤트 프로모션으로 발급되는 재화 지급 쿠폰 입니다.");
         // when
         // then
     }

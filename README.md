@@ -38,3 +38,4 @@
 
 - Database Schema
   - [Database Schema](./docs/sql/coupon.sql)
+  - ![image](https://github.com/user-attachments/assets/e155b44d-5393-421d-9116-e89781c3a7da)

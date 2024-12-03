@@ -1,0 +1,7 @@
+[2024-12-04 00:16:59:1762836] DEBUG 27343 --- [ionShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71904469, started on Tue Dec 03 23:47:36 KST 2024
+[2024-12-04 00:17:08:410] DEBUG 35192 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@71904469
+[2024-12-04 00:17:10:2394] DEBUG 35192 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-04 00:17:10:2811] DEBUG 35192 --- [    Test worker] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+[2024-12-04 00:17:10:2837] DEBUG 35192 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-04 00:17:10:2858] DEBUG 35192 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-04 00:19:55:168009] DEBUG 35192 --- [ionShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71904469, started on Wed Dec 04 00:17:08 KST 2024

@@ -49,7 +49,15 @@ public class CouponServiceImpl implements CouponService {
       couponRepository.save(coupon);
     }
 
-    return new ResponseEntity<>(couponRepository.findByTopic(couponTopic), HttpStatus.OK);
+    // 4. Topic에 해당하는 쿠폰 조회
+    List<Coupon> coupons = couponRepository.findByTopic(couponTopic);
+
+    // 5. Response 생성 (GenerateCouponResponseDto)
+    List<GenerateCouponResponseDto> response = coupons.stream()
+            .map(GenerateCouponResponseDto::new)
+            .toList();
+
+    return new ResponseEntity<>(response, HttpStatus.OK);
   }
 
   @Transactional

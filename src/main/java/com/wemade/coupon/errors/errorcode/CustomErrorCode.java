@@ -16,7 +16,7 @@ public enum CustomErrorCode implements ErrorCode {
     NOT_FOUND_TOPIC_COUPON(HttpStatus.BAD_REQUEST, "쿠폰 주제를 찾을 수 없습니다."),
     NOT_FOUND_COUPON(HttpStatus.BAD_REQUEST, "쿠폰을 찾을 수 없습니다."),
     DEACTIVATE_COUPON(HttpStatus.BAD_REQUEST, "사용이 정지된 쿠폰 입니다."),
-    ALREADY_REDEEMED_COUPON(HttpStatus.BAD_REQUEST, "이미 쿠폰을 사용한 유저 입니다.");
+    ALREADY_REDEEMED_USER(HttpStatus.BAD_REQUEST, "이미 쿠폰을 사용한 유저 입니다.");
 
     private final HttpStatus httpStatus;
     private final String message;

@@ -1431,3 +1431,181 @@
 [2024-12-03 16:59:21:434904] DEBUG 28184 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.wemade.coupon.errors.response.ErrorResponse@22e0f010]
 [2024-12-03 16:59:21:434906] DEBUG 28184 --- [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.wemade.coupon.errors.exception.RestApiException]
 [2024-12-03 16:59:21:434906] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+[2024-12-03 17:03:35:689123] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/", parameters={}
+[2024-12-03 17:03:35:689135] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:35:689199] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:03:35:689530] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-ui.css", parameters={}
+[2024-12-03 17:03:35:689532] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:35:689534] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:35:689538] DEBUG 28184 --- [nio-8081-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-ui.css.]
+[2024-12-03 17:03:35:689538] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:35:689558] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:35:689561] DEBUG 28184 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:35:689572] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+[2024-12-03 17:03:35:689576] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:35 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:35:689603] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:35:689617] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/index.css", parameters={}
+[2024-12-03 17:03:35:689618] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-ui-standalone-preset.js", parameters={}
+[2024-12-03 17:03:35:689618] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-initializer.js", parameters={}
+[2024-12-03 17:03:35:689618] DEBUG 28184 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-ui-bundle.js", parameters={}
+[2024-12-03 17:03:35:689619] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:35:689620] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:35:689620] DEBUG 28184 --- [io-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:35:689620] DEBUG 28184 --- [nio-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:35:689621] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:35:689622] DEBUG 28184 --- [nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/index.css.]
+[2024-12-03 17:03:35:689623] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:35:689623] DEBUG 28184 --- [io-8081-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:35:689623] DEBUG 28184 --- [nio-8081-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:35:689623] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:35:689623] DEBUG 28184 --- [io-8081-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-ui-bundle.js.]
+[2024-12-03 17:03:35:689624] DEBUG 28184 --- [nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-initializer.js.]
+[2024-12-03 17:03:35:689624] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:35:689624] DEBUG 28184 --- [nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-ui-standalone-preset.js.]
+[2024-12-03 17:03:35:689624] DEBUG 28184 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:35:689625] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:35:689625] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:35:689626] DEBUG 28184 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:35:689626] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:35:689626] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:35:689626] DEBUG 28184 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:35:689627] DEBUG 28184 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:35:689627] DEBUG 28184 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:35:689627] DEBUG 28184 --- [io-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:35:689627] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+[2024-12-03 17:03:35:689627] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:35 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/in (truncated)...]
+[2024-12-03 17:03:35:689628] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 17:03:35:689628] DEBUG 28184 --- [io-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 17:03:35:689628] DEBUG 28184 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 17:03:35:689629] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:35 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:35:689629] DEBUG 28184 --- [io-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:35 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:35:689629] DEBUG 28184 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:35 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:35:689630] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:35:689631] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:35:689631] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:35:689633] DEBUG 28184 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:36:689954] DEBUG 28184 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/favicon-32x32.png", parameters={}
+[2024-12-03 17:03:36:689955] DEBUG 28184 --- [nio-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:36:689956] DEBUG 28184 --- [nio-8081-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:36:689957] DEBUG 28184 --- [nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/favicon-32x32.png.]
+[2024-12-03 17:03:36:689957] DEBUG 28184 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:36:689958] DEBUG 28184 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:36:689959] DEBUG 28184 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:36:689960] DEBUG 28184 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+[2024-12-03 17:03:36:689960] DEBUG 28184 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:36 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/fa (truncated)...]
+[2024-12-03 17:03:36:689963] DEBUG 28184 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:36:689989] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/favicon-16x16.png", parameters={}
+[2024-12-03 17:03:36:689990] DEBUG 28184 --- [nio-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:36:689993] DEBUG 28184 --- [nio-8081-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:36:689993] DEBUG 28184 --- [nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/favicon-16x16.png.]
+[2024-12-03 17:03:36:689994] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:36:689995] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:36:689997] DEBUG 28184 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:36:690000] DEBUG 28184 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+[2024-12-03 17:03:36:690001] DEBUG 28184 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:36 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/fa (truncated)...]
+[2024-12-03 17:03:36:690003] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:43:697219] DEBUG 28184 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/", parameters={}
+[2024-12-03 17:03:43:697220] DEBUG 28184 --- [nio-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:43:697237] DEBUG 28184 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:03:43:697313] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-ui.css", parameters={}
+[2024-12-03 17:03:43:697314] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/index.css", parameters={}
+[2024-12-03 17:03:43:697314] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-ui-bundle.js", parameters={}
+[2024-12-03 17:03:43:697315] DEBUG 28184 --- [nio-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:43:697315] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:43:697316] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:43:697316] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-ui-standalone-preset.js", parameters={}
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/index.css.]
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html/swagger-initializer.js", parameters={}
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-ui.css.]
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:43:697317] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:43:697318] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:43:697318] DEBUG 28184 --- [nio-8081-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-ui-bundle.js.]
+[2024-12-03 17:03:43:697318] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:43:697318] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:43:697319] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:43:697319] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:43:697319] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:43:697319] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:43:697319] DEBUG 28184 --- [nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-ui-standalone-preset.js.]
+[2024-12-03 17:03:43:697319] DEBUG 28184 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:43:697320] DEBUG 28184 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:43:697320] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+[2024-12-03 17:03:43:697320] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:43:697320] DEBUG 28184 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:43 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/in (truncated)...]
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui/index.html/swagger-initializer.js.]
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+[2024-12-03 17:03:43:697321] DEBUG 28184 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:43:697322] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+[2024-12-03 17:03:43:697322] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:43:697322] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+[2024-12-03 17:03:43:697322] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:43 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:43:697322] DEBUG 28184 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:43 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:43:697323] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 17:03:43:697323] DEBUG 28184 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[2024-12-03 17:03:43:697324] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:43:697324] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:43 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:43:697325] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2024-12-03 17:03:43:697326] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:43:697326] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Dec 03 17:03:43 KST 2024, status=404, error=Not Found, path=/swagger-ui/index.html/sw (truncated)...]
+[2024-12-03 17:03:43:697326] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:43:697328] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+[2024-12-03 17:03:46:700243] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-03 17:03:46:700243] DEBUG 28184 --- [nio-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:46:700246] DEBUG 28184 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:03:46:700280] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+[2024-12-03 17:03:46:700281] DEBUG 28184 --- [nio-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:46:700283] DEBUG 28184 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:03:46:700284] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-03 17:03:46:700285] DEBUG 28184 --- [nio-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:46:700288] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+[2024-12-03 17:03:46:700288] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+[2024-12-03 17:03:46:700288] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+[2024-12-03 17:03:46:700289] DEBUG 28184 --- [nio-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:46:700289] DEBUG 28184 --- [nio-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:46:700289] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:03:46:700296] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:03:46:700296] DEBUG 28184 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:03:46:700297] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:03:46:700305] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:03:47:700778] DEBUG 28184 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-03 17:03:47:700779] DEBUG 28184 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-03 17:03:47:700783] DEBUG 28184 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-03 17:03:47:700784] DEBUG 28184 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/swagger-ui/oauth2-re (truncated)...]
+[2024-12-03 17:03:47:700785] DEBUG 28184 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:03:47:700822] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-03 17:03:47:700823] DEBUG 28184 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-03 17:03:48:701730] DEBUG 28184 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-03 17:03:48:701731] DEBUG 28184 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-03 17:03:48:701733] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:08:11:965175] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+[2024-12-03 17:08:11:965177] DEBUG 28184 --- [nio-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:08:11:965186] DEBUG 28184 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:08:11:965327] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+[2024-12-03 17:08:11:965329] DEBUG 28184 --- [nio-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:08:11:965342] DEBUG 28184 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:08:11:965670] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+[2024-12-03 17:08:11:965671] DEBUG 28184 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+[2024-12-03 17:08:11:965674] DEBUG 28184 --- [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+[2024-12-03 17:08:11:965674] DEBUG 28184 --- [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/swagger-ui/oauth2-re (truncated)...]
+[2024-12-03 17:08:11:965678] DEBUG 28184 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:08:11:965720] DEBUG 28184 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+[2024-12-03 17:08:12:965723] DEBUG 28184 --- [nio-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+[2024-12-03 17:08:12:965731] DEBUG 28184 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+[2024-12-03 17:08:12:965842] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+[2024-12-03 17:08:12:965844] DEBUG 28184 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+[2024-12-03 17:08:12:965851] DEBUG 28184 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+[2024-12-03 17:08:12:965852] DEBUG 28184 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"Coupon API","description":"쿠폰 서비스","version":"v1.0.0"},"servers" (truncated)..."]
+[2024-12-03 17:08:12:965855] DEBUG 28184 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2024-12-03 17:27:06:3811] DEBUG 1832 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6869a3b3
+[2024-12-03 17:27:36:33894] DEBUG 1832 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+[2024-12-03 17:27:41:39038] DEBUG 1832 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2024-12-03 17:27:42:39242] DEBUG 1832 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+[2024-12-03 17:27:46:44079] DEBUG 1832 --- [ionShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6869a3b3, started on Tue Dec 03 17:27:06 KST 2024

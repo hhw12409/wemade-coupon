@@ -73,7 +73,7 @@ public class CouponServiceImpl implements CouponService {
     String userId = request.getUserId();
     couponRedemptionRepository.findByCouponAndUserId(coupon, userId)
             .ifPresent(log -> {
-              throw new RestApiException(CustomErrorCode.ALREADY_REDEEMED_COUPON);
+              throw new RestApiException(CustomErrorCode.ALREADY_REDEEMED_USER);
             });
 
     // 5. 사용자 로그 저장
